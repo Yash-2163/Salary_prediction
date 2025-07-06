@@ -1,0 +1,30 @@
+# Ignore Python cache
+__pycache__/
+*.pyc
+
+# Ignore virtual environment folders
+venv/
+env/
+.venv/
+.env/
+
+# Ignore local git repository
+.git
+.gitignore
+
+# Ignore IDE configs
+.vscode/
+.idea/
+
+# Ignore data files if not needed in container
+data/
+*.csv
+*.xlsx
+
+# Ignore logs
+*.log
+
+# Ignore model files (if you plan to rebuild or download in container)
+*.h5
+*.pkl
+*.joblib

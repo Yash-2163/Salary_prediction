@@ -1,0 +1,23 @@
+services:
+  backend:
+    build:
+      context: ./backend
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./model:/app/model   # <-- Corrected path relative to docker-compose.yml
+    networks:
+      - mlapp_net
+
+  frontend:
+    build: ./frontend
+    ports:
+      - "8501:8501"
+    depends_on:
+      - backend
+    networks:
+      - mlapp_net
+
+networks:
+  mlapp_net:
+    driver: bridge

@@ -1,0 +1,50 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Virtual environment
+venv/
+env/
+.venv/
+.env/
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# PyCharm / VSCode / IDE files
+.vscode/
+.idea/
+*.iml
+
+# Logs and databases
+*.log
+*.sqlite3
+
+# Data files (if you don’t want to track large data)
+data/
+*.csv
+*.xlsx
+
+# Model files (optional)
+*.h5
+*.pkl
+*.joblib
+
+# Docker files
+docker-compose.override.yml
+
+# Python test cache
+.pytest_cache/
+
+# macOS files
+.DS_Store
